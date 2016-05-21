@@ -6,6 +6,13 @@ body {
 
 }
 
+::selection {
+  background: #E5049D; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #F8E71C; /* Gecko Browsers */
+}
+
 .big {
   display: inline-block;
   padding-top: 40px;
@@ -49,7 +56,17 @@ body {
   cursor: pointer;
   background: transparent;
   box-shadow: 13px 13px #E5049D;
+  transition: 0.3s;
+}
 
+.moar:hover {
+  background: none;
+  box-shadow: 13px 13px #F8E71C;
+  border: 10px solid #E5049D;
+}
+
+.moar:active {
+  color: #E5049D;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
