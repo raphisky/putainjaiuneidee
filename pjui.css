@@ -6,11 +6,15 @@ body {
 
 }
 
+a {
+  color: #F8E71C;
+}
+
 ::selection {
-  background: #E5049D; /* WebKit/Blink Browsers */
+  background: #E5049D;
 }
 ::-moz-selection {
-  background: #F8E71C; /* Gecko Browsers */
+  background: #F8E71C;
 }
 
 .big {
@@ -71,7 +75,8 @@ body {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
+.big {font-size: 75px;}
+.medium {font-size: 40px;}
 }
 
 /* Smartphones (landscape) ----------- */
@@ -86,7 +91,6 @@ body {
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
 }
 
 /* iPads (landscape) ----------- */
