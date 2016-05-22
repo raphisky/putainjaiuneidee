@@ -1,7 +1,9 @@
 $(document).ready(function(){
 
+	var ideas = [];
+
 	noIdeas = function(){
-		return ["Plus d'idée. Ajoute la tienne si tu en as une !"]
+		return ["Plus d'idée. Ajoute la tienne si tu en as une ! <a href='http://google.fr'>gooogle</a>"];
 	}
 
 	getIdeasFromFile = function(gss){
@@ -13,35 +15,45 @@ $(document).ready(function(){
 	}
 
 	getRandomIdea = function(ideas){
+		var html = false;
 		if(ideas.length > 0){
 			var i = Math.floor(Math.random()*ideas.length);
 			var r = ideas[i];
 			ideas.splice(i, 1);
 		} else {
 			var r = getRandomIdea(noIdeas());
+			html = true;
 		}
-		return r;
+		return [r, html];
 	}
 
 	printRandomIdea = function(ideas){
-		$('#idee_display').text(getRandomIdea(ideas));
+		var ideaArray = getRandomIdea(ideas);
+		var idea      = ideaArray[0];
+		var html      = ideaArray[1];
+		var $display  = $('#idee_display');
+		if(html)
+			$display.html(idea);
+		else	
+			$display.text(idea);
 	}
 
 	$.getJSON('https://spreadsheets.google.com/feeds/list/1954RrPSlDyFIyIsyjObpqDgKlPWBUaW2SUaV72j5oO0/2/public/basic?alt=json')
-	 .always(function(ideas, textStatus){
-	 	if(textStatus == "error")
-	 		var ideas = noIdeas()
-	 	else
-	 		var ideas = getIdeasFromFile(ideas);
-
-	 	console.log(ideas)
+	 .done(function(ideas){
+	 	ideas = getIdeasFromFile(ideas);
+	 	console.log(ideas);
 
 	 	//on load
 	 	printRandomIdea(ideas)
 	 	//au click
 	 	$('.moar').on('click', function(){
+	 		console.log(ideas.length);
 		 	printRandomIdea(ideas);
 	 	})
+	 })
+	 .fail(function(){
+	 	// en cas de fail
+	 	printRandomIdea(ideas)
 	 })
 
 })
