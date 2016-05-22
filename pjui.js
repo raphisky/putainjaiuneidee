@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	noIdeas = function(){
-		return ["No ideas."]
+		return ["Plus d'idée."]
 	}
 
 	getIdeasFromFile = function(gss){

@@ -8,9 +8,32 @@ body {
 
 a {
   color: #F8E71C;
+  transition: 0.5s;
+  display: inline-block;
+}
+
+footer {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+footer a {
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  padding: 3px;
+  border-bottom: 3px solid #E5049D;
+
+}
+
+footer a:hover {
+  border-bottom: 6px solid #F8E71C;
+  color: #F8E71C;
+  font-size: 24px;
 }
 
 ::selection {
+  font-weight: 300;
   background: #E5049D;
 }
 ::-moz-selection {
