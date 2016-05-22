@@ -103,6 +103,7 @@ footer a:hover {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 .big {font-size: 75px;}
 .medium {font-size: 40px;}
+.moar {width: 400px;}
 }
 
 /* Smartphones (landscape) ----------- */
