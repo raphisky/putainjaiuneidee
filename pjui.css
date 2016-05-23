@@ -17,6 +17,14 @@ footer {
   line-height: 27px;
 }
 
+#idee_display {
+  display: block;
+  width:100%;
+  min-height: 80px;
+  padding-left: 15px;
+  padding-right:15px;
+}
+
 footer a {
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
