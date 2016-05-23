@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var ideas = [];
 
 	noIdeas = function(){
-		return ["Plus d'idée. Ajoute la tienne si tu en as une ! <a href='http://google.fr'>gooogle</a>"];
+		return ["Plus d'idée. Ajoute la tienne si tu en as une ! <br> <a class="typeform-share link" href='https://raphisky.typeform.com/to/ITMPGZ' data-mode="2" target="_blank">Ajouter une putain d'idée</a>"];
 	}
 
 	getIdeasFromFile = function(gss){
@@ -34,7 +34,7 @@ $(document).ready(function(){
 		var $display  = $('#idee_display');
 		if(html)
 			$display.html(idea);
-		else	
+		else
 			$display.text(idea);
 	}
 
