@@ -64,9 +64,9 @@ footer a:hover {
   padding-bottom: 15px;
   display: block;
   margin: auto;
-  width: 90%;
+  width: 100%;
   max-width: 600px;
-  min-width: 450px;
+  min-width: 300px;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -156,13 +156,13 @@ iPad 3
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
   .big {font-size: 75px;}
   .medium {font-size: 32px;}
-  .moar {width: 400px;}
+  .moar {width: 300px;}
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
   .big {font-size: 75px;}
   .medium {font-size: 32px;}
-  .moar {width: 400px;}
+  .moar {width: 300px;}
 }
 
 /* iPhone 5 ----------- */
@@ -208,13 +208,13 @@ iPad 3
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   .big {font-size: 75px;}
   .medium {font-size: 32px;}
-  .moar {width: 400px;}
+  .moar {width: 300px;}
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   .big {font-size: 75px;}
   .medium {font-size: 32px;}
-  .moar {width: 400px;}
+  .moar {width: 300px;}
 }
 
 /* Samsung Galaxy S4 ----------- */
