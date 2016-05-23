@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- fb metadata -->
-    <meta property="fb:app_id" content="" />
     <meta property="og:url" content="http://putainjaiuneidee.com" />
-    <meta property="og:type" content="product" />
+    <meta property="og:type" content="website" />
     <meta property="og:title" content="Putain, j'ai une idée :" />
     <meta property="og:description" content="Et si on montait une société secrète dont le seul but est de..." />
-    <meta property="og:image" content="cover.png" />
+    <meta property="og:image" content="/cover.png" />
+    <meta property="fb:app_id" content="279652375706807" />
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@putain_didee">
@@ -42,6 +42,23 @@
 
   </head>
   <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '279652375706807',
+          xfbml      : true,
+          version    : 'v2.6'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
     <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
 
     <span class="big">PUTAIN</span><br>
@@ -59,7 +76,7 @@
     <footer>
       <p>
         <br> <br>
-        <a class="typeform-share link" href="https://raphisky.typeform.com/to/ITMPGZ" data-mode="2" target="_blank">Justement, j'ai moi-même une putain d'idée</a><br> <br>
+        <a class="typeform-share link" href="https://jaiuneidee.typeform.com/to/ITMPGZ" data-mode="2" target="_blank">Justement, j'ai moi-même une putain d'idée</a><br> <br>
         <a href="http://twitter.com/putain_didee" target="BLANK_">Twitter</a> - Par <a href="http://github.com/prise6">françois</a> et <a href="http://twitter.com/raphisky">raph</a>
         <br>
       </p>
