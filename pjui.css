@@ -97,6 +97,7 @@ footer a:hover {
   background: transparent;
   box-shadow: 13px 13px #E5049D;
   transition: 0.3s;
+  margin-bottom: 20px;
 }
 
 .moar:hover {
@@ -109,10 +110,6 @@ footer a:hover {
   color: #E5049D;
 }
 
-.fb-send-frame {
-  margin-top: 20px;
-  margin-bottom:20px;
-}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
