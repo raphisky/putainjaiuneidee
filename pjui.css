@@ -169,13 +169,13 @@ iPad 3
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
   .big {font-size: 75px;}
   .medium {font-size: 32px;}
-  .moar {width: 400px;}
+  .moar {width: 300px;}
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
   .big {font-size: 75px;}
   .medium {font-size: 32px;}
-  .moar {width: 400px;}
+  .moar {width: 300px;}
 }
 
 /* iPhone 6 ----------- */
