@@ -41,6 +41,7 @@ footer a:hover {
 
 .big {
   display: inline-block;
+  margin:auto;
   padding-top: 40px;
   font-size: 150px;
   font-weight: 700;
@@ -49,6 +50,8 @@ footer a:hover {
 }
 
 .medium {
+  display: inline-block;
+  margin:auto;
   font-size: 70px;
   font-weight: 700;
   letter-spacing: 6px;
