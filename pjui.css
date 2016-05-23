@@ -41,6 +41,7 @@ footer a:hover {
 
 .big {
   display: inline-block;
+  margin:auto;
   padding-top: 40px;
   font-size: 150px;
   font-weight: 700;
@@ -49,6 +50,8 @@ footer a:hover {
 }
 
 .medium {
+  display: inline-block;
+  margin:auto;
   font-size: 70px;
   font-weight: 700;
   letter-spacing: 6px;
@@ -76,11 +79,8 @@ footer a:hover {
 .moar {
   margin-top: 90px;
   display: block;
-<<<<<<< HEAD
   margin: auto;
   width: 100%;
-=======
->>>>>>> gh-pages
   border: 10px solid #F8E71C;
   font-size: 24px;
   height: 60px;
