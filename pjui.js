@@ -53,7 +53,7 @@ $(document).ready(function(){
 	}
 
 
-	$.getJSON('https://spreadsheets.google.com/feeds/list/1954RrPSlDyFIyIsyjObpqDgKlPWBUaW2SUaV72j5oO0/2/public/basic?alt=json')
+	$.getJSON('https://spreadsheets.google.com/feeds/list/1B9i6s7tehfLeckySQiNNxpOfJ6QqvMFd_KeoV3l1mcI/2/public/basic?alt=json')
 	 .done(function(ideas){
 	 	ideas = getIdeasFromFile(ideas);
 	 	console.log(ideas);
