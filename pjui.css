@@ -29,8 +29,14 @@ footer {
   display: inline-block;
   color: #E5049D;
   border-bottom: 3px dotted #F8E71C;
+  margin-top: 7px;
+  text-align: center;
+  transition: 0.5s;
 }
 
+#idee_display a:hover {
+  font-size: 44px;
+}
 
 footer a {
   text-decoration: none;
@@ -86,7 +92,7 @@ footer a:hover {
 }
 
 .idee p {
-  font-size: 36px;
+  font-size: 32px;
   line-height: 40px;
   text-align: justify;
 }
