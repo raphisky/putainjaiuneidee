@@ -6,9 +6,9 @@ body {
 }
 
 a {
-  color: #F8E71C;
   transition: 0.5s;
   display: inline-block;
+  text-decoration: none !important;
 }
 
 footer {
@@ -26,18 +26,17 @@ footer {
 }
 
 #idee_display a {
-  display: inline-block;
   color: #E5049D;
   border-bottom: 3px dotted #F8E71C;
   margin-top: 7px;
   text-align: center;
-  transition: 0.5s;
   text-decoration: none;
 }
 
 #idee_display a:hover {
   font-size: 44px;
   text-decoration: none;
+  color: #F8E71C;
 }
 
 footer a {
