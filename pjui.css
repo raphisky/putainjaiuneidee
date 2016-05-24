@@ -25,6 +25,13 @@ footer {
   padding-right:15px;
 }
 
+#idee_display a {
+  display: inline-block;
+  color: #E5049D;
+  border-bottom: 3px dotted #F8E71C;
+}
+
+
 footer a {
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
