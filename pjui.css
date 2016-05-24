@@ -32,10 +32,12 @@ footer {
   margin-top: 7px;
   text-align: center;
   transition: 0.5s;
+  text-decoration: none;
 }
 
 #idee_display a:hover {
   font-size: 44px;
+  text-decoration: none;
 }
 
 footer a {
