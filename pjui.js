@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
 	var ideas = [];
-	var sollications = ["Ajoute la tienne si tu en as une ! <br> <a class='typeform-share link' href='https://raphisky.typeform.com/to/ITMPGZ' data-mode='2' target='_blank'>Ajouter une putain d'idée</a>",
-						"Ajoute la tienne si tu en as une ! <br> <a class='typeform-share link' href='https://raphisky.typeform.com/to/ITMPGZ' data-mode='2' target='_blank'>Ajouter une putain d'idée</a>"];
+	var sollications = ["Tu as sûrement une idée lumineuse à partager ! <br> <a class='typeform-share link' href='https://raphisky.typeform.com/to/ITMPGZ' data-mode='2' target='_blank'>Ajouter une idée lumineuse</a>",
+						"Plus on est de fous, plus on rit : <br> <a class='typeform-share link' href='https://raphisky.typeform.com/to/ITMPGZ' data-mode='2' target='_blank'>Ajouter une putain d'idée</a>","Toi aussi, participe <br> <a class='typeform-share link' href='https://raphisky.typeform.com/to/ITMPGZ' data-mode='2' target='_blank'>Oh que oui</a>"];
 	var click = 0;
 	var isSollicated = false;
 

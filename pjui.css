@@ -26,6 +26,7 @@ footer {
 }
 
 #idee_display a {
+  font-size: 24px;
   color: #E5049D;
   border-bottom: 3px dotted #F8E71C;
   margin-top: 7px;
@@ -34,9 +35,9 @@ footer {
 }
 
 #idee_display a:hover {
-  font-size: 44px;
-  text-decoration: none;
   color: #F8E71C;
+  font-size: 36px;
+  text-decoration: none;
 }
 
 footer a {
