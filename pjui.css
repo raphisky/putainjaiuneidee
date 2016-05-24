@@ -9,6 +9,7 @@ a {
   transition: 0.5s;
   display: inline-block;
   text-decoration: none !important;
+  color: #F8E71C;
 }
 
 footer {
@@ -26,6 +27,7 @@ footer {
 }
 
 #idee_display a {
+  padding: 4px;
   font-size: 24px;
   color: #E5049D;
   border-bottom: 3px dotted #F8E71C;
