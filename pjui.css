@@ -84,8 +84,9 @@ footer {
   border-bottom: 2px solid #F8E71C;
 }
 
-.appear:hover, .appear:hover a {
+.appear:hover a {
   color: #F8E71C;
+  background-color: #E5049D;
 }
 
 
@@ -108,7 +109,7 @@ footer a:hover {
   background: #E5049D;
 }
 ::-moz-selection {
-  background: #F8E71C;
+  background: #E5049D;
 }
 
 h1 {
