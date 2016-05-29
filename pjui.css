@@ -50,6 +50,45 @@ footer {
   text-decoration: none;
 }
 
+.share {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 15px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.appear {
+  float: right;
+  color: rgba(248,231,28,0.73);
+  transition: 0.4s;
+  display: inline-block;
+  border-bottom: 2px solid rgba(248,231,28,0.73);
+}
+
+.fb {
+  float: left;
+}
+
+.appear a {
+  color: rgba(248,231,28,0.73);
+}
+
+
+.share:hover .appear a {
+  color: #F8E71C;
+}
+
+.share:hover .appear {
+  border-bottom: 2px solid #F8E71C;
+}
+
+.appear:hover, .appear:hover a {
+  color: #F8E71C;
+}
+
+
 footer a {
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
