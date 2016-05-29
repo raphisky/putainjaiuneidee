@@ -152,4 +152,12 @@ h2 {
 @media (min-width: 550px) {
   .container {
     width: 80%; }
+
+  h1 {
+    font-size: 150px;
+  }
+
+  h2 {
+    font-size: 70px;
+  }
 }
