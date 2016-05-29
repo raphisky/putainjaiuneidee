@@ -102,6 +102,7 @@ h2 {
   max-width: 600px;
   min-width: 300px;
   font-family: 'Oswald', sans-serif;
+  margin: auto;
 }
 
 .idee p {
