@@ -77,35 +77,39 @@ $(document).ready(function(){
 	linkToImgur = function(id){
 		var link = 'http://imgur.com/'+id;
 		$(".twitter-share-button").remove();
-	    var tweet = $('<a>')
-	        .attr('href', "https://twitter.com/share")
-	        .attr('id', "tweet")
-	        .attr('class', "twitter-share-button tw")
-	        .attr('data-lang', "fr")
-	        .attr('data-via', "putain_didee")
-	        .attr('data-related', "raphisky")
-	        .attr('data-size', "large")
-	        .text('Tweeter');
-	    $(".tw").prepend(tweet);
-	    tweet.attr('data-text', "Putain d'idée ( via putainjaiuneidee.com ) :");
-	    tweet.attr('data-url', link);
+		var tweet = $('<a>')
+		.attr('href', "https://twitter.com/share")
+		.attr('id', "tweet")
+		.attr('class', "twitter-share-button tw")
+		.attr('data-lang', "fr")
+		.attr('data-via', "putain_didee")
+		.attr('data-related', "raphisky")
+		.attr('data-size', "large")
+		.text('Tweeter');
+		$(".tw").prepend(tweet);
+		tweet.attr('data-text', "Putain d'idée ( via putainjaiuneidee.com ) :");
+		tweet.attr('data-url', link);
 		twttr.widgets.load();
-// 		FB.ui({
-//   method: 'share',
-//   mobile_iframe: true,
-//   href: 'https://developers.facebook.com/docs/',
-// }, function(response){});
 
-		$('.fb-share-button').data('href', link);
+		$('.my-fb-share').remove();
+		var fb = $('<a>').attr('class', 'my-fb-share').attr('href', '#').text('Share');
+		fb.on('click', function(e){
+			FB.ui({
+				method: 'share',
+				mobile_iframe: true,
+				href: link,
+			}, function(response){});
+		})
+		$('.fb').prepend(fb);
 		$('.appear a').attr('href', link).text('imgur.com/'+id);
 		return;
 	}
 
 	$.getJSON('https://spreadsheets.google.com/feeds/list/1B9i6s7tehfLeckySQiNNxpOfJ6QqvMFd_KeoV3l1mcI/2/public/basic?alt=json')
-	 .done(function(ideas){
-	 	files = getIdeasFromFile(ideas);
-	 	ideas = files[0];
-	 	idImgur = files[1];
+	.done(function(ideas){
+		files = getIdeasFromFile(ideas);
+		ideas = files[0];
+		idImgur = files[1];
 
 	 	//on load
 	 	printRandomIdea(ideas, idImgur, click)
@@ -113,17 +117,17 @@ $(document).ready(function(){
 	 	$('.moar').on('click', function(){
 	 		console.log(ideas.length);
 	 		click++;
-		 	printRandomIdea(ideas, idImgur, click);
-		 	console.log(click);
+	 		printRandomIdea(ideas, idImgur, click);
+	 		console.log(click);
 	 	})
 	 })
-	 .fail(function(){
+	.fail(function(){
 	 	// en cas de fail
 	 	printRandomIdea(ideas, idImgur, click)
 	 })
 
-	 $(document).keyup(function(e){
-	 	var code = e.keyCode || e.which;
+	$(document).keyup(function(e){
+		var code = e.keyCode || e.which;
 		if(code == 68) {
 			ordre = (ordre == "date_desc")?"date_asc":"date_desc";
 			lastKey = 68;
@@ -135,6 +139,6 @@ $(document).ready(function(){
 			ordre = "length_desc";
 		}
 		console.log(ordre);
-	 })
+	})
 
 })
