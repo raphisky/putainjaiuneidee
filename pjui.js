@@ -92,7 +92,7 @@ $(document).ready(function(){
 		twttr.widgets.load();
 
 		$('.my-fb-share').remove();
-		var fb = $('<a>').attr('class', 'my-fb-share').attr('href', '#').text('Facebook');
+		var fb = $('<a>').attr('class', 'my-fb-share').attr('href', '#').text('Partager');
 		fb.on('click', function(e){
 			FB.ui({
 				method: 'share',
