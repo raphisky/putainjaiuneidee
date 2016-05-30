@@ -32,8 +32,6 @@ footer {
   display: block;
   width:100%;
   min-height: 80px;
-  padding-left: 15px;
-  padding-right:15px;
 }
 
 #idee_display a {
@@ -51,6 +49,51 @@ footer {
   font-size: 36px;
   text-decoration: none;
 }
+
+.share {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.appear {
+  float: right;
+  color: rgba(248,231,28,0.73);
+  transition: 0.4s;
+  display: inline-block;
+  border-bottom: 2px solid rgba(248,231,28,0.73);
+}
+
+.fb {
+  float: left;
+}
+
+.tw {
+  float: left;
+  vertical-align: middle;
+}
+
+.appear a {
+  color: rgba(248,231,28,0.73);
+}
+
+
+.share:hover .appear a {
+  color: #F8E71C;
+}
+
+.share:hover .appear {
+  border-bottom: 2px solid #F8E71C;
+}
+
+.appear:hover a {
+  color: #F8E71C;
+  background-color: #E5049D;
+}
+
 
 footer a {
   text-decoration: none;
@@ -71,7 +114,7 @@ footer a:hover {
   background: #E5049D;
 }
 ::-moz-selection {
-  background: #F8E71C;
+  background: #E5049D;
 }
 
 h1 {
@@ -102,6 +145,7 @@ h2 {
   max-width: 600px;
   min-width: 300px;
   font-family: 'Oswald', sans-serif;
+  margin: auto;
 }
 
 .idee p {
