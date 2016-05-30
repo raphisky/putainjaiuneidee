@@ -191,6 +191,13 @@ h2 {
     width: 85%;
     padding: 0; }
 
+  .facebook-stuff {
+    display: none; }
+
+  .appear {
+    display: none;
+    }
+
   h2 {
     font-size: 34px;
     letter-spacing: 1px; }
