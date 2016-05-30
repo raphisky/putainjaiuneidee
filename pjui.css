@@ -72,6 +72,11 @@ footer {
   margin-left: 10px;
 }
 
+.my-fb-share {
+  margin-left: 10px;
+  display: inline-block;
+}
+
 .tw {
   float: left;
   vertical-align: middle;
