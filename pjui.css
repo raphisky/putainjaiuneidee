@@ -71,6 +71,11 @@ footer {
   float: left;
 }
 
+.tw {
+  float: left;
+  vertical-align: middle;
+}
+
 .appear a {
   color: rgba(248,231,28,0.73);
 }
