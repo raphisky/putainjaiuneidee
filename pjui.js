@@ -137,6 +137,12 @@ $(document).ready(function(){
 			ordre = "length_asc";
 		} else if (code == 83){
 			ordre = "length_desc";
+		} else if (code == 13 ){
+			//moche
+			console.log(ideas.length);
+	 		click++;
+	 		printRandomIdea(ideas, idImgur, click);
+	 		console.log(click);
 		}
 		console.log(ordre);
 	})
