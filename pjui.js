@@ -54,7 +54,7 @@ $(document).ready(function(){
 		var idea, html;
 		var $display  = $('#idee_display');
 		var id = "EuhgzRn";
-		var proba = 1/7;
+		var proba = 1/8;
 		if(Math.random() < proba && click > 5 && isSollicated == false){
 			idea = sollications[Math.floor(Math.random()*sollications.length)];
 			isSollicated = true;
